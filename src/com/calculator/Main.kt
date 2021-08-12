@@ -1,6 +1,6 @@
 package com.calculator
 
 fun main() {
-    val calculator = CalculatorProvider().createDefaultCalculator()
-    print(calculator.calculate("-cvs234+52fv34svd"))
+    val c: Calculator = CalculatorProvider().createDefaultCalculator()
+    print(c.calculate("-cvs234_529fv34svd"))
 }

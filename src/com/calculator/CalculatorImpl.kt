@@ -25,7 +25,7 @@ class CalculatorImpl(val operations: Map<Char, Operation> = OperationProvider.st
         for (key in operations.keys) {
             cleanedInput = cleanedInput.replace(key.toString(), " $key ")
         }
-        return cleanedInput.split(" ").map { if (it == "") "0" else it }
+        return cleanedInput.split(" ").map { if (it == "") "0.0" else it }
     }
 
     private fun parseNumberText(numberText: String): Number {
